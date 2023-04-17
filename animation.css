@@ -1,0 +1,51 @@
+body {
+    background-color: #89cff0;
+}
+
+img {
+    height: 120px;
+}
+
+div {
+    padding: 10px;
+    width: 100px;
+    height: 80px;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 7s infinite;
+}
+
+#div1 {
+    animation-timing-function: linear;
+}
+
+#div2 {
+    animation-timing-function: ease;
+}
+
+#div3 {
+    animation-timing-function: ease-in;
+}
+
+#div4 {
+    animation-timing-function: ease-out;
+}
+
+#div5 {
+    animation-timing-function: ease-in-out;
+}
+
+#div6 {
+    animation-direction: reverse;
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+        right:0px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
